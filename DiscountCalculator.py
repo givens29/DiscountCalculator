@@ -34,6 +34,7 @@ def calculateDisc():
 root = tk.Tk()
 root.title("Discount Calculator")
 root.geometry("400x300")
+root.configure(bg='#BBDCE5')
 
 greetings = tk.Label(root, text="Welcome to the Discount Calculator!", font=("Arial", 10))
 greetings.pack(pady=20)
@@ -52,5 +53,6 @@ quantityField.pack()
 
 calculateButton = tk.Button(root, text="Calculate", command=calculateDisc)
 calculateButton.pack(pady=15)
+calculateButton.configure(bg='#4CAF50', fg='white', font=("Arial", 10, "bold"))
 
 root.mainloop()
